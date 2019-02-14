@@ -74,7 +74,7 @@ m = np.transpose(N)[n]
 A = point(P, m, 5)
 B = point(P, m, -5)
 c = float(np.dot(np.transpose(M)[n], P))/m[1]
-line_seg(A, B, 'Normal to line '+str(n+1), c)
+line_seg(A, B, 'Normal to line '+str(n+1)+' at P', c)
 
 #checking if the lines intersect before finding out and plotting the point of intersection
 if float(M[1][n])/M[0][n] != float(N[1][n_d])/N[0][n_d]: #checking if normals of the two lines have same d.v.
