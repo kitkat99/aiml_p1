@@ -1,0 +1,16 @@
+\frametitle{Solution}
+The equation of a line is given by,
+\\ \vspace{5} $n^{T}(X-A)$, where  A  is  any  point  on  the  line.
+\\ \vspace{5} We get the two possible equations of L for two values of $P_{2}$,
+\\ \vspace{5} Equation 1:  \begin{bmatrix}
+1 & -\sqrt{3}
+\end{bmatrix}
+(X-\begin{bmatrix}
+7/2 \\ -\sqrt3 /2
+\end{bmatrix})=0
+\\ \vspace{5} Equation 2:  \begin{bmatrix}
+1 & -\sqrt{3}
+\end{bmatrix}
+(X-\begin{bmatrix}
+5/2 \\ 3/2
+\end{bmatrix})=0

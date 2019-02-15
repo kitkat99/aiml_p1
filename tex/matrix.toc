@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Geometry Question}{3}{0}{1}
+\beamer@sectionintoc {2}{Matrix transformation of Question}{3}{0}{2}
+\beamer@sectionintoc {3}{Approach/Strategy}{3}{0}{3}
+\beamer@sectionintoc {4}{Solution}{3}{0}{4}
+\beamer@sectionintoc {5}{Figure of Solution}{3}{0}{5}
