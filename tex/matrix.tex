@@ -55,13 +55,30 @@ The normal to the curve, $x^2 + 2xy - 3y^2 = 0$, at (1, 1)
 \end{frame}
 
 
+\begin{frame}{Diagram}
+\begin{tikzpicture}
+\begin{scope}
+\draw[thick,->] (-5,0) -- (5,0) node[anchor=north west] {x axis};
+\draw[thick,->] (0,-3) -- (0,3) node[anchor=south east] {y axis};
+\foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {-3,-2,-1,0,1,2,3}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+\draw (-3,-3) -- (3,3);
+\draw (4,-4/3) -- (-5,5/3);
+\filldraw[blue](1,1) circle (2pt) node[anchor=north east] {$P(1,1)$};
+\end{scope}
+\end{tikzpicture}
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Matrix Transformation of Question}
 \begin{block}{Rewriting in the form of matrices...}
 Find the direction vectors, and normal vectors (as column vectors), to the pair of lines represented by the equation $x^2 + 2xy - 3y^2 = 0$. \\
 If a normal is drawn at (1,1), find out in which quadrant it intersects the curve again, i.e.,\\
 If M stores the normal vector of the normal at (1,1) as $M_1$, and the normal vector of the other line as $M_2$ as$M = \begin{pmatrix} M_1 & M_2 \end{pmatrix}$, and \\
-$K = \begin{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix}M1 & \begin{pmatrix}0\\0\end{pmatrix} M_1 \end{pmatrix}$. 
+$K = \begin{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix}^T M_1 & \begin{pmatrix}0\\0\end{pmatrix}^T M_2 \end{pmatrix}$. 
 Find X such that \\
 $K = X^T M \\
 X^T = KM^{-1}$
@@ -216,7 +233,6 @@ Hence, the correct answer is - \\
 \filldraw[blue](1,1) circle (2pt) node[anchor=north east] {$P(1,1)$};
 \filldraw[blue](3,-1) circle (2pt) node[anchor=north west] {$I(3,-1)$};
 \end{scope}
-
 \end{tikzpicture}
 \end{frame}
 
